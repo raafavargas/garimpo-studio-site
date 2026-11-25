@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — GARIMPO STUDIO</title>
+  <meta name="description" content="Como o GARIMPO STUDIO trata dados, incluindo dados do TikTok, autenticação, armazenamento de credenciais e revogação de acesso.">
+  <link rel="icon" href="assets/icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="GARIMPO CLUB"><span>STUDIO</span></a>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="termos.html">Termos de Uso</a></li>
+      <li><a href="privacidade.html" aria-current="page">Privacidade</a></li>
+      <li><a href="index.html#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<article class="doc">
+  <h1>Política de Privacidade</h1>
+  <p class="meta">GARIMPO STUDIO · mantido por GARIMPO CLUB · Última atualização: 24 de novembro de 2026</p>
+
+  <p>Esta Política explica quais dados o aplicativo de computador <strong>GARIMPO STUDIO</strong> (“aplicativo”) usa,
+    onde eles ficam e como você controla o acesso à sua conta do TikTok. Ela foi escrita a partir do funcionamento real
+    do aplicativo e segue a Lei Geral de Proteção de Dados (LGPD – Lei nº 13.709/2018).</p>
+
+  <p class="note">Resumo: o GARIMPO STUDIO funciona no seu computador e <strong>não possui servidor próprio</strong>.
+    Nós não recebemos, não vendemos e não compartilhamos seus dados. As informações ficam no seu computador e só
+    são enviadas aos serviços de terceiros descritos abaixo, quando você usa a função correspondente.</p>
+
+  <h3>1. Quem é o responsável</h3>
+  <p>O aplicativo é mantido pelo GARIMPO CLUB, para criação e envio de vídeos às contas do próprio usuário.
+    Contato para qualquer assunto de privacidade: <a href="mailto:rafael-vargasnutri@hotmail.com">rafael-vargasnutri@hotmail.com</a>.</p>
+
+  <h3>2. Dados tratados no seu computador</h3>
+  <div class="table-wrap"><table>
+    <tr><th>Dado</th><th>Para quê</th><th>Onde fica</th></tr>
+    <tr><td>Cadastro de produtos (nome, link de afiliado, descrição, benefícios, preço e data de conferência informados por você)</td><td>Gerar roteiros, legendas e mensagens</td><td>Arquivos do aplicativo no seu computador</td></tr>
+    <tr><td>Fotos e vídeos que você adiciona e declara ter autorização para usar</td><td>Montar os vídeos</td><td>Pasta do aplicativo no seu computador</td></tr>
+    <tr><td>Vídeos gerados, legendas e roteiros</td><td>Revisão, exportação e publicação</td><td>Pasta do aplicativo no seu computador</td></tr>
+    <tr><td>Configurações (marca, @ das redes, cores, voz)</td><td>Personalizar os vídeos</td><td>Arquivos do aplicativo no seu computador</td></tr>
+    <tr><td>Registro de publicações (vídeo enviado, assinatura digital do arquivo, estado, identificador do envio no TikTok e link do post, quando disponível)</td><td>Mostrar o andamento e impedir envio duplicado do mesmo vídeo</td><td>Arquivo do aplicativo no seu computador</td></tr>
+  </table></div>
+
+  <h3>3. Dados do TikTok</h3>
+  <p><strong>Autenticação.</strong> A conexão usa o TikTok Login Kit (OAuth 2.0 com PKCE). Ao clicar em “Conectar TikTok”,
+    o aplicativo abre a página oficial do TikTok no seu navegador. Você faz login diretamente no TikTok e decide quais
+    permissões conceder. <strong>O aplicativo nunca recebe nem armazena a sua senha do TikTok.</strong> O TikTok devolve
+    um código de autorização ao endereço local <code>http://127.0.0.1:3455/callback/</code>, que existe apenas no seu
+    computador durante a conexão; o aplicativo troca esse código pelos tokens de acesso diretamente com o TikTok.</p>
+  <p><strong>Permissões solicitadas:</strong></p>
+  <ul>
+    <li><code>user.info.basic</code> – identificar a conta conectada;</li>
+    <li><code>video.upload</code> – enviar um vídeo aprovado como rascunho para a caixa de entrada da sua conta;</li>
+    <li><code>video.publish</code> – publicar diretamente, apenas quando você escolher essa opção, definir a visibilidade e confirmar.</li>
+  </ul>
+  <p><strong>Dados do TikTok que o aplicativo recebe e guarda:</strong> identificador da conta (open_id), apelido e nome de
+    usuário, lista de permissões concedidas, tokens de acesso e de atualização (com seus prazos), o identificador de cada
+    envio (publish_id), o status do processamento e, quando o TikTok disponibilizar, o identificador público do post para
+    montar o link. No momento de publicar, o aplicativo também consulta as opções de visibilidade e interação permitidas
+    para a sua conta e a duração máxima de vídeo, que são usadas apenas na tela de publicação e não são guardadas.</p>
+  <p><strong>Dados enviados ao TikTok:</strong> somente o arquivo do vídeo que você aprovou e escolheu enviar e, na
+    publicação direta, a legenda, a visibilidade, as configurações de comentários/dueto/costura e a divulgação de conteúdo
+    comercial que você selecionou.</p>
+  <p><strong>O que o aplicativo não faz:</strong> não lê suas mensagens, seguidores, vídeos de outras pessoas, histórico
+    de visualização ou estatísticas; não publica nada sem a sua ação e confirmação; não altera a privacidade da sua conta.</p>
+
+  <h3>4. Armazenamento das credenciais</h3>
+  <p>O Client Secret do aplicativo, o token de acesso e o token de atualização são armazenados no seu computador
+    <strong>criptografados pelo Windows (DPAPI)</strong>, de forma que só o seu usuário do Windows, naquele computador,
+    consegue lê-los. Eles não são enviados a nenhum servidor do GARIMPO CLUB (que não existe) e não fazem parte deste site.</p>
+
+  <h3>5. Revogação de acesso e exclusão</h3>
+  <ul>
+    <li>No aplicativo, em <strong>Publicação › Desconectar</strong>: o aplicativo pede ao TikTok a revogação do token e apaga
+      os tokens, o apelido e o nome de usuário guardados no computador.</li>
+    <li>No TikTok: você pode remover o acesso do GARIMPO STUDIO a qualquer momento nas configurações de segurança/permissões
+      de aplicativos da sua conta.</li>
+    <li>Os demais dados ficam na pasta do aplicativo no seu computador e podem ser apagados por você a qualquer momento
+      (inclusive desinstalando o aplicativo e apagando a pasta).</li>
+  </ul>
+
+  <h3>6. Outros serviços usados pelo aplicativo</h3>
+  <ul>
+    <li><strong>Narração neural (Microsoft):</strong> quando a voz “neural, online” está selecionada, o texto da narração
+      de cada cena é enviado ao serviço de voz da Microsoft para gerar o áudio. A voz “Maria (Windows, offline)” não envia dados.</li>
+    <li><strong>Shopee:</strong> ao importar links com a opção “Sugerir nome pelo link”, o aplicativo acessa o próprio link
+      de afiliado para ler o nome do produto no endereço final. Não há coleta automática de preços ou avaliações.</li>
+    <li><strong>TikTok:</strong> conforme a seção 3. O uso do TikTok também é regido pelos termos e pela política de privacidade do TikTok.</li>
+  </ul>
+  <p>O aplicativo não usa anúncios, rastreadores, cookies ou ferramentas de análise de uso.</p>
+
+  <h3>7. Este site</h3>
+  <p>Este site é estático, hospedado no GitHub Pages, não usa cookies, formulários ou ferramentas de análise e não carrega
+    recursos de terceiros. O provedor de hospedagem (GitHub) pode registrar dados técnicos de acesso, como endereço IP,
+    conforme a política de privacidade do GitHub.</p>
+
+  <h3>8. Compartilhamento e venda</h3>
+  <p>Não vendemos, alugamos ou compartilhamos dados pessoais. Os dados só chegam aos serviços listados na seção 6 quando
+    você usa a função correspondente.</p>
+
+  <h3>9. Seus direitos (LGPD)</h3>
+  <p>Você pode solicitar confirmação, acesso, correção, eliminação e informações sobre o tratamento dos seus dados pelo
+    e-mail <a href="mailto:rafael-vargasnutri@hotmail.com">rafael-vargasnutri@hotmail.com</a>. Como os dados ficam no seu
+    computador, a maior parte desses direitos pode ser exercida diretamente no aplicativo.</p>
+
+  <h3>10. Crianças</h3>
+  <p>O aplicativo não é destinado a menores de 18 anos e o uso do TikTok deve respeitar a idade mínima exigida pelo TikTok.</p>
+
+  <h3>11. Alterações</h3>
+  <p>Esta Política pode ser atualizada para refletir mudanças no aplicativo. A data no topo indica a versão vigente.</p>
+
+  <hr style="border-color:#2e2e2e;margin:32px 0">
+  <section id="en" lang="en">
+    <h2>Privacy Policy — English summary</h2>
+    <p>GARIMPO STUDIO is a Windows desktop app maintained by GARIMPO CLUB. It has <strong>no backend server</strong>; we do
+      not receive, sell or share user data.</p>
+    <ul>
+      <li><strong>TikTok authentication:</strong> TikTok Login Kit for Desktop (OAuth 2.0 + PKCE) on TikTok's own page, with a
+        local loopback redirect <code>http://127.0.0.1:3455/callback/</code>. We never see the user's TikTok password.</li>
+      <li><strong>Scopes:</strong> <code>user.info.basic</code>, <code>video.upload</code> (upload drafts to the user's inbox),
+        <code>video.publish</code> (direct post only when the user chooses and confirms).</li>
+      <li><strong>TikTok data stored locally:</strong> open_id, display name, username, granted scopes, access/refresh tokens,
+        publish_id, post status and public post ID when available. Creator info used only on the posting screen is not stored.</li>
+      <li><strong>Data sent to TikTok:</strong> only the video file the user approved and chose to send and, for direct posts,
+        the caption and the posting options selected by the user.</li>
+      <li><strong>Credential storage:</strong> client secret and tokens are encrypted with Windows DPAPI on the user's computer.</li>
+      <li><strong>Revocation and deletion:</strong> “Disconnect” revokes the token with TikTok and deletes local tokens; access can
+        also be removed in TikTok's app settings. Local files can be deleted at any time.</li>
+      <li><strong>Other services:</strong> Microsoft online text-to-speech (narration text, optional), Shopee link resolution
+        (optional). No ads, trackers, cookies or analytics.</li>
+      <li><strong>Contact:</strong> <a href="mailto:rafael-vargasnutri@hotmail.com">rafael-vargasnutri@hotmail.com</a></li>
+    </ul>
+  </section>
+</article>
+</main>
+<footer>
+  <div class="inner">
+    <span>© 2026 GARIMPO CLUB · GARIMPO STUDIO</span>
+    <span><a href="termos.html">Termos de Uso</a> · <a href="privacidade.html">Política de Privacidade</a> · <a href="mailto:rafael-vargasnutri@hotmail.com">Suporte</a></span>
+  </div>
+</footer>
+</body>
+</html>

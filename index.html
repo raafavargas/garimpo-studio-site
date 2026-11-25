@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GARIMPO STUDIO — vídeos de achadinhos do GARIMPO CLUB</title>
+  <meta name="description" content="GARIMPO STUDIO é o aplicativo de computador do GARIMPO CLUB que cria vídeos verticais de achadinhos e envia os vídeos aprovados para a conta TikTok do próprio usuário pela API oficial.">
+  <link rel="icon" href="assets/icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="GARIMPO CLUB"><span>STUDIO</span></a>
+    <ul>
+      <li><a href="index.html" aria-current="page">Início</a></li>
+      <li><a href="termos.html">Termos de Uso</a></li>
+      <li><a href="privacidade.html">Privacidade</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <div>
+      <h1>GARIMPO <em>STUDIO</em></h1>
+      <p class="lead">Aplicativo de computador (Windows) do <strong>GARIMPO CLUB</strong> que transforma produtos cadastrados
+        em vídeos verticais de achadinhos (9:16) e envia os vídeos que você aprovou para a <strong>sua própria conta do TikTok</strong>,
+        usando a API oficial do TikTok.</p>
+      <a class="btn" href="privacidade.html">Política de Privacidade</a>
+      <a class="btn ghost" href="termos.html">Termos de Uso</a>
+    </div>
+    <div class="phone" aria-hidden="true">
+      <img src="assets/logo.png" alt="">
+      <div class="pill">ENTRE NO GRUPO VIP</div>
+      <small>vídeo vertical 1080 × 1920</small>
+    </div>
+  </div>
+
+  <section>
+    <h2>O que o aplicativo faz</h2>
+    <div class="grid">
+      <div class="card"><h3>Cria vídeos</h3><p>Monta vídeos de 15 a 30 segundos com as fotos e vídeos autorizados de cada produto, narração em português, legendas sincronizadas e a identidade visual do GARIMPO CLUB.</p></div>
+      <div class="card"><h3>Você revisa e aprova</h3><p>Nenhum vídeo é exportado ou enviado sem revisão. Preços só aparecem se o próprio usuário os confirmou, com a data da verificação.</p></div>
+      <div class="card"><h3>Envia ao TikTok</h3><p>Com a autorização da sua conta pelo TikTok Login Kit, o vídeo aprovado é enviado como rascunho para a caixa de entrada do seu TikTok, onde você decide se publica.</p></div>
+      <div class="card"><h3>Roda no seu computador</h3><p>O GARIMPO STUDIO não tem servidor próprio: seus produtos, vídeos e credenciais ficam no seu computador.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Como funciona a integração com o TikTok</h2>
+    <ol class="steps">
+      <li><strong>Autorização oficial.</strong> Ao clicar em “Conectar TikTok”, o aplicativo abre a página de autorização do próprio TikTok no seu navegador. Você entra na sua conta e escolhe se concede as permissões. O GARIMPO STUDIO nunca vê nem guarda a sua senha do TikTok.</li>
+      <li><strong>Retorno local.</strong> O TikTok devolve um código de autorização para o endereço local <code>http://127.0.0.1:3455/callback/</code>, que só existe no seu computador enquanto a conexão está sendo feita (fluxo OAuth 2.0 com PKCE).</li>
+      <li><strong>Credenciais protegidas.</strong> Os tokens de acesso são guardados no seu computador, criptografados pelo Windows (DPAPI) e vinculados ao seu usuário do Windows.</li>
+      <li><strong>Envio somente com o seu clique.</strong> O vídeo só é enviado quando você clica e confirma. O mesmo vídeo não é enviado duas vezes.</li>
+      <li><strong>Revogação.</strong> O botão “Desconectar” revoga o acesso junto ao TikTok e apaga os tokens do computador. Você também pode remover o acesso nas configurações do seu TikTok.</li>
+    </ol>
+    <p class="note">Permissões solicitadas ao TikTok: <code>user.info.basic</code> (identificar a conta conectada), <code>video.upload</code> (enviar rascunhos) e <code>video.publish</code> (publicação direta, somente quando o usuário escolher e confirmar).</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato e suporte</h2>
+    <p>Dúvidas, pedidos sobre dados pessoais ou suporte: <a href="mailto:rafael-vargasnutri@hotmail.com">rafael-vargasnutri@hotmail.com</a><br>
+      Instagram do GARIMPO CLUB: <a href="https://www.instagram.com/garimpoclube_ofertas/" rel="noopener">@garimpoclube_ofertas</a></p>
+  </section>
+
+  <section lang="en">
+    <h2>English summary</h2>
+    <p>GARIMPO STUDIO is a Windows desktop application by GARIMPO CLUB that creates vertical product videos and uploads
+      videos approved by the user to the user's own TikTok account through TikTok's official Login Kit and Content Posting API.
+      It has no backend server: data and encrypted credentials stay on the user's computer. See our
+      <a href="termos.html#en">Terms of Service</a> and <a href="privacidade.html#en">Privacy Policy</a>.
+      Contact: <a href="mailto:rafael-vargasnutri@hotmail.com">rafael-vargasnutri@hotmail.com</a>.</p>
+  </section>
+</main>
+<footer>
+  <div class="inner">
+    <span>© 2026 GARIMPO CLUB · GARIMPO STUDIO</span>
+    <span><a href="termos.html">Termos de Uso</a> · <a href="privacidade.html">Política de Privacidade</a> · <a href="mailto:rafael-vargasnutri@hotmail.com">Suporte</a></span>
+    <span>GARIMPO STUDIO não é afiliado, patrocinado ou endossado pelo TikTok, Shopee ou Instagram.</span>
+  </div>
+</footer>
+</body>
+</html>
